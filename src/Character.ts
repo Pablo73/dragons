@@ -62,9 +62,9 @@ class Character implements Fighter {
     enemy.receiveDamage(this._strength);
   }
 
-  //   special?(enemy: Fighter): void {
-  //     throw new Error('Method not implemented.');
-  //   }
+  special?(enemy: Fighter): void {
+    enemy.receiveDamage(this._strength + 2);
+  }
 
   levelUp(): void {
     this._maxLifePoints += getRandomInt(1, 10);
