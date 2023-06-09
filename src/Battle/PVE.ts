@@ -4,7 +4,7 @@ import Battle from './Battle';
 class PVE extends Battle {
   constructor(
     private _character: Fighter,
-    private _characterFigther: Fighter[] | SimpleFighter[],
+    private _characterFigther: SimpleFighter[],
   ) {
     super(_character);
     super.fight();
